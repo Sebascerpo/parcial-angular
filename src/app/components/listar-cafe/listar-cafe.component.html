@@ -1,17 +1,22 @@
-<!-- listar-cafes.component.html -->
-<table class="table">
+<table class="table table-bordered custom-table">
   <thead>
     <tr>
+      <th scope="col">#</th>
       <th scope="col">Nombre</th>
       <th scope="col">Tipo</th>
       <th scope="col">Región</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let cafe of cafes">
+    <tr *ngFor="let cafe of cafes; let i = index">
+      <td>{{ i + 1 }}</td>
       <td>{{ cafe.nombre }}</td>
       <td>{{ cafe.tipo }}</td>
       <td>{{ cafe.region }}</td>
     </tr>
   </tbody>
 </table>
+<div>
+  <p>Total Café de origen: {{ cantidadOrigen }} <br>
+    Total Café blend: {{ cantidadBlend }}</p>
+</div>

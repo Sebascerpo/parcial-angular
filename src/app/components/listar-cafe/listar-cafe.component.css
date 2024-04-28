@@ -1,3 +1,25 @@
 :host {
   display: block;
 }
+.custom-table thead {
+  background-color: black; /* Fondo negro para el encabezado */
+  color: white; /* Color de texto blanco para el encabezado */
+}
+.custom-table thead {
+  background-color: black; /* Fondo negro para el encabezado */
+  color: white; /* Color de texto blanco para el encabezado */
+}
+
+.custom-table tbody td {
+  border-top: none; /* Elimina la división superior */
+  border-left: none; /* Elimina la división izquierda */
+  border-right: none; /* Elimina la división derecha */
+}
+
+.custom-table tbody td:first-child {
+  border-left: none; /* Elimina la división izquierda solo para la primera columna */
+}
+
+.custom-table tbody td:last-child {
+  border-right: none; /* Elimina la división derecha solo para la última columna */
+}
